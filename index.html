@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src='https://www.google.com/recaptcha/api.js'></script> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KJ Portfolio</title>
+    <!doctype html>
+		<!-- Bootstrap v5.0.0-beta3 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      body{
+        background-color: #92b47eb2;
+      }
+      .container {
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+        }
+        .separation{
+          grid-column: 1/13;
+          color: rgba(240, 248, 255, 0);
+        }
+        .separation2{
+          grid-column: 1/13;
+          color: rgba(240, 248, 255, 0);
+          background-color: white;
+        }
+        .separation3{
+          grid-column: 1/13;
+          color: #314528;
+        }
+        .separation4{
+          grid-column: 1/13;
+          color: #31452800;
+          background-color: #92b47e00;
+        }
+        .separation5{
+          grid-column: 1/6;
+          color: #314528;
+          background-color: #92b47e00;
+        }
+        .top{
+          grid-column: 1/13;
+          
+        }
+        
+        .explore{
+          grid-column: 1/13;
+          color: #314528;
+        }
+        .explore1{
+          grid-column: 1/13;
+          color: rgba(240, 248, 255, 0);
+        }
+        .explore3{
+          grid-column: 1/13;
+          color: rgba(240, 248, 255, 0);
+        }
+        .parallax { 
+          grid-column: 1/13;
+          background-image: url("photos/waterfall.jpg");
+          min-height: 500px;
+          min-width: auto;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .media{
+          grid-column: 1/13;
+          background-color: white;
+        }
+        .parallax2 { 
+          grid-column: 1/13;
+          background-image: url("photos/IMG_0761.JPG");
+          min-height: 500px;
+          min-width: auto;
+          max-height: 600px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          text-align: center;
+        }
+        .graphic1{
+          grid-column: 1/6;
+
+        }
+        .graphic2{
+          grid-column: 6/13;
+        }
+        .carouselside{
+          grid-column: 1/5;
+          color:#92b47e00;
+        }
+        .carousel{
+            grid-column: 5/9;
+        }
+        .carouselside2{
+          grid-column: 9/13;
+          color:#92b47e00;
+        }
+        .parallax3 { 
+          grid-column: 1/13;
+          background-image: url("photos//IMG_0761.JPG");
+          min-height: 500px;
+          min-width: auto;
+          max-height: 600px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          text-align: center;
+        }
+        .website1{
+          color: #314528;
+        }
+        .website2{
+          color: #314528;
+        }
+        .website3{
+          color: #314528;
+        }
+        .footer{
+          grid-column: 1/13;
+          min-height: 140px;
+        }
+        .foot{
+          grid-column:1/6;
+        }
+        .foot2{
+          grid-column: 6/13;
+        }
+        
+              
+    </style>
+	</head>
+  <div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
+
+        <script>
+        $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+        $('#back2Top').fadeIn();
+        } else {
+        $('#back2Top').fadeOut();
+        }
+        });
+        $(document).ready(function() {
+        $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+        });
+
+        });
+        /* Scroll to top when arrow up clicked END */ 
+</script>
+	<body>
+		<div class="container font-monospace">
+      <div class="separation">
+			<div class="col-md-12">
+				<h3>-</h3>
+			</div> <!-- end div portfolio header -->
+		</div> 
+      <div class="top">  
+          <div class="row">
+            <div class="col-md-2">
+            
+                <img src="photos/Untitled (300 x 100 px).png" alt="Creative Source Logo" class="img-fixed">
+            
+            
+            </div> <!-- end div header left - logo -->
+            
+            
+            <nav id="navbar" class="col-md-7 offset-md-3">
+              <div class="d-flex justify-content-center">	
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#explore">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#graphics">Graphics</a>
+                      </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#photog">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#web">Websites</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact Me</a>
+                      </li>
+                  </ul>
+              </div>
+            </nav> <!-- end nav header right -->
+          </div> <!-- end div row 1 -->  
+			</div>
+		
+			<div class="explore" id="explore">
+        <div class="explore1">
+          <div class="container d-flex justify-content-center">
+              <h1>.</h1>
+          </div> 
+          <div class="container d-flex justify-content-center">
+              <h2>.</h2>
+          </div>
+          </div>
+          <div class="container d-flex justify-content-center">
+              <h1 class="font-monospace">explore.</h1>
+          </div>
+          <div class="explore3">
+          <div class="container d-flex justify-content-center">
+              <h1>.</h1>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <h1>.</h1>
+          </div>
+        </div>
+			</div> 
+
+      <div class="parallax" id="about">
+          <div class="row">
+            <div class="about" style="padding-left: 60px; padding-top: 60px;">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="photos/IMG_0533.JPG" class="img-fluid rounded-start" style="padding-left: 10px; padding-top: 10px;">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Katie James</h3>
+                        <p class="card-text">Ms. James is a student at James Madison University in the School of Media Arts & Design. She specializes in graphics, photography, and media management.</p>
+                        <p class="card-text">
+                          She is currently taking 12 credit hours and taking 15 next semester. Ms. James also works part-time in conjunction with Hotel Madison organizing events.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="separation2">
+        <p>.</p>
+      </div>
+      <div class="media" id="media">
+        <div class="row">
+          <div class="col-md-4" style="padding-left: 60px;">
+            <img src="photos/IMG_9950.PNG" class="card-img-top" >
+            <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center">Photography</h5>
+            <p class="card-text d-flex justify-content-center">A collection of some of my photography from the past few years.</p>
+            <a href="https://www.instagram.com/knjphotography_/" target="_blank" class="btn btn-primary d-flex justify-content-center">Instagram Profile</a>
+            </div>
+          </div>
+          <div class="col-md-4" style="padding-right: 30px; padding-left: 30px;">
+            <img src="photos/IMG_6144.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center">Personal</h5>
+            <p class="card-text d-flex justify-content-center">A deeper look into me.</p>
+            <a href="https://www.instagram.com/katie_james_3/" target="_blank" class="btn btn-primary d-flex justify-content-center">Instagram Profile</a>
+            </div>
+          </div>
+          <div class="col-md-4" style="padding-right: 60px;">
+            <img src="photos/pfp.JPEG" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center">Linkedin</h5>
+            <p class="card-text d-flex justify-content-center">Previous experience.</p>
+            <a href="https://www.linkedin.com/in/katie-james-08b0b2197/" target="_blank" class="btn btn-primary d-flex justify-content-center">Linked In Profile</a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+          <div class="separation2">
+            <p>.</p>
+          </div>
+
+        <div class="parallax2" id="graphics">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="graphics1" style="padding-left: 40px; padding-top: 40px; padding-bottom: 40px;">
+                <img src="photos/peach and bailey.png" class="card-img-top">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="graphics2" style="padding-left: 40px; padding-top: 40px; padding-bottom: 40px;">
+                <img src="photos/ccm sticker pt 2.png" class="card-img-top">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="separation">
+          <div>
+            <h3 class="font-monospace d-flex justify-content-center">.</h3>
+          </div>
+        </div>
+        <div class="separation3">
+          <div>
+            <h3 class="font-monospace d-flex justify-content-center">Photography</h3>
+          </div>
+        </div>
+
+        <div class="carouselside">
+          <p>.</p>
+        </div>
+
+          <div class="carousel" id="photog">
+            <p><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="photos/DSC_0099.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="photos/DSC_0198.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="photos/DSC_0202.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="photos/DSC_0754.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="photos/DSC_0808.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="photos/mac.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="photos/mac2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="photos/DSC_0098.JPG" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div></p>
+            </div>
+
+            <div class="carouselside2">
+              <p>.</p>
+            </div>
+
+            <div class="separation">
+              <div>
+                <h3 class="font-monospace d-flex justify-content-center">.</h3>
+              </div>
+            </div>
+          
+            <div class="parallax3" id="web">
+              <div class="separation4">
+                <div>
+                  <h3 class="font-monospace d-flex justify-content-center">.</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="website1" style="padding-left: 60px; padding-top: 40px;">
+                    <img src="photos/startersite.png" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-center">Starter Site</h5>
+                    <p class="card-text d-flex justify-content-center">A tourism site for Harrisonburg and JMU.</p>
+                    </div>
+                    <a href="https://jameskn13.github.io/starter/" target="_blank" class="btn btn-primary d-flex justify-content-center">Check it Out</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="website2" style="padding-left: 30px; padding-right: 30px; padding-top: 40px;">
+                    <img src="photos/retail site.png" class="card-img-top" >
+                    <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-center">Retail Site</h5>
+                    <p class="card-text d-flex justify-content-center">A mock up of a a retail site for a crystal and alternative store.</p>
+                    <a href="https://jameskn13.github.io/bootstrapwebsite/" target="_blank" class="btn btn-primary d-flex justify-content-center">Check it Out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="website3"style="padding-right: 60px; padding-top: 40px;">
+                    <img src="photos/html challenge.png" class="card-img-top" >
+                    <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-center">HTML Challenge</h5>
+                    <p class="card-text d-flex justify-content-center">My first experience with HTML.</p>
+                    <a href="https://jameskn13.github.io/htmlchallenge/" target="_blank" class="btn btn-primary d-flex justify-content-center">Check it Out</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="foot d-flex justify-content-start" style="padding-top:20px;">
+              <img src="photos/Untitled (300 x 100 px).png">
+              </div>
+              <div class="foot2 d-flex justify-content-end" style="padding-right: 60px; padding-top: 40px;">
+                <h6>Located in Harrisonburg, VA.</h6>
+              </div>
+              <div class="separation">
+                <div>
+                  <h3 class="font-monospace d-flex justify-content-center">.</h3>
+                </div>
+              </div>
+
+			<div class="footer" id="contact">
+        <form action="formsubmit.php" method="POST">
+          <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+              <h5>Name</h5> 
+              <input type="text" name="name">
+              <div class="separation">
+                <div>
+                  <p class="font-monospace d-flex justify-content-center">.</p>
+                  
+                </div>
+              </div>
+              <h5>Subject</h5> 
+              <input type="text" name="subject">
+              <div class="separation">
+                <div>
+                  <p class="font-monospace d-flex justify-content-center">.</p>
+                </div>
+              </div>
+              <h5>Email</h5> 
+              <input type="text" name="email">
+          </div>
+          <div class="col-md-3">
+              <h5>Message</h5>
+              <textarea name="message" rows="10" cols="25"></textarea></p>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="separation">
+              <div>
+                <h3 class="font-monospace d-flex justify-content-center">.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+              <p><input type="submit" value="Submit" style="background-color:#92b47eb2; width:12em; height:2.5em;"></p>
+              <p class="separation">....</p>
+              <p><input type="reset" value="Clear" style="background-color: #92b47eb2; width:12em; height:2.5em; padding-left: 10px;"></p>
+            </div>
+          </div>
+        </form>
+          <div class="separation4">
+            <div>
+              <h3 class="font-monospace d-flex justify-content-center">.</h3>
+              <h3 class="font-monospace d-flex justify-content-center">.</h3>
+            </div>
+          </div>
+			</div> <!-- end div row 6 -->
+		</div> <!-- end div container -->
+	</body>
+</html>

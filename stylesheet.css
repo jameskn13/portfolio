@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* Add your custom CSS declarations below  */
+
+body{
+    background-color: #92b47eb2;
+}
+
+a, a:hover { color: #314528; }
+
+
+
+.nav-pills .nav-link.active, .show > .nav-pills .nav-link {
+    background-color: #314528;
+
+}
+.nav-link{
+    color: #314528;
+}
+
+.nav-item:hover {
+	background-color: #92b47eb2;
+}
+
+.footer {
+	background-color: #92b47e00;
+}
+
+.h2{
+	color: rgb(126, 152, 121);
+}
+
+.btn-primary {
+	background-color: #314528;
+	border-color: #314528;
+}
+
+.btn-primary:hover{
+    background-color: #92b47eb2;
+    border-color: #92b47eb2;
+}
+
+#back2Top {
+    width:50px; /* width of button */
+    height:50px; /* height of button */
+    line-height:30px;
+    overflow:hidden;
+    z-index:999;
+    display:none;
+    cursor:pointer;
+    transform:rotate(270deg); /* turns right arrow 270 degrees */
+    position:fixed; /* fixed at bottom corner */
+    bottom:30px; /* distance from bottom */
+    right:40px; /* distance from right */
+    padding:8px 0px 0px 0px; /* padding around arrow */
+    border:1px solid #314528;
+    border-radius:2px;
+    background:#314528bd; /* blue background with transparency */
+    color:#eee; /* color of arrow */
+    text-align:center;
+    font-size:40px; /* size of the arrow */
+    text-decoration:none;
+    }
+    #back2Top:link {
+    background:#314528bd;
+    color:#eee;
+    }
+    #back2Top:visited {
+    background:#314528bd;
+    color:#eee;
+    }
+    #back2Top:hover {
+    background:#314528;
+    color:#ccc;
+    }
+    #back2Top:active {
+    background:#314528bd;
+    color:#eee;
+    }
